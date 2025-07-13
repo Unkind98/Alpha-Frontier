@@ -1,1 +1,17 @@
-{"isBaseRuleset":true,"lastUpdated":"2023-12-02T18:48:33Z","modUrl":"https://github.com/carriontrooper/Alpha-Frontier","defaultBranch":"main","author":"carriontrooper","modSize":9871,"topics":["unciv-mod","unciv-mod-rulesets"],"constants":{"maxXPfromBarbarians":150,"unitUpgradeCost":{"base":10,"perProduction":2,"eraMultiplier":0.5,"exponent":1,"roundTo":5}}}
+{
+  "isBaseRuleset": true,
+  "constants": {
+    "maxXPfromBarbarians": 150,
+    "unitUpgradeCost": {
+      "eraMultiplier": 0.5
+    }
+  },
+  "modUrl": "https://github.com/Unkind98/Alpha-Frontier",
+  "defaultBranch": "main",
+  "author": "Unkind98",
+  "topics": [
+    "unciv-mod",
+    "unciv-mod-rulesets"
+  ]
+}
+
