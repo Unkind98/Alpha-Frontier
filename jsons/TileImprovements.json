@@ -648,15 +648,15 @@
 		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
 		"shortcutKey": "."
 	},
-	
+
 	{
-        "name": "Repair",
-        "terrainsCanBeBuiltOn": ["Land"],
-        "turnsToBuild": 2,
-        "shortcutKey": "E",
-        "uniques": ["Unbuildable", "Excluded from map editor"],
-        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
-    },
+		"name": "Repair",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 2,
+		"shortcutKey": "E",
+		"uniques": ["Unbuildable", "Excluded from map editor"],
+		"civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
+	},
 
 	// Great Person improvements
 	{
@@ -825,7 +825,7 @@
 			"Gives a defensive bonus of [100]%",
 			"Adjacent enemy units ending their turn take [30] damage",
 			"Can be built just outside your borders",
-        	"Gain control over [All] tiles in a [1]-tile radius",
+			"Gain control over [All] tiles in a [1]-tile radius",
 			//"Constructing it will take over the tiles around it and assign them to your closest city",
 			"Removes removable features when built"
 		],
@@ -845,7 +845,7 @@
 			}
 		]
 	},
-	
+
 	// Nation Uniques
 	{
 		"name": "Mining Camp",
@@ -929,7 +929,7 @@
 			"[+1 Culture] from [Holorelay] tiles <after discovering [Colonial Culture]>", //yes they are meant to be exponential, might nerf if too OP in testing
 			"[+1 Culture] from [Holorelay] tiles <after discovering [Net Culture]>",
 			"[+1 Culture] from [Holorelay] tiles <after discovering [Posthumanist Culture]>",
-			"Costs [2] [Culture] per turn <in tiles adjacent to [Holorelay] tiles>",
+			"Costs [2] [Culture] per turn",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+3 Gold, +3 Culture]"
 		],
@@ -963,95 +963,40 @@
 		"turnsToBuild": 6,
 		"techRequired": "Portable Power Sources",
 		"uniques": [
-			"Cannot be built on [All] tiles <with [1] to [6] neighboring [Waystation] tiles>", // can't be built next to each other
+			"[+1 Culture] for every adjacent [Habitation Dome] <in [your] tiles>",
+			"[+1 Culture] for every adjacent [Urban Improvement] <in [your] tiles>",
+			"[+1 Faith] for every adjacent [Lake] <in [your] tiles>",
+			"[+1 Faith] for every adjacent [Mountain] <in [your] tiles>",
+			"[+1 Faith] for every adjacent [Oasis] <in [your] tiles>",
+			"[+1 Faith] for every adjacent [Polar Oasis] <in [your] tiles>",
+			"[+1 Food] for every adjacent [Agricultural] <in [your] tiles>",
+			"[+1 Food] for every adjacent [Fresh water] <in [your] tiles>",
+			"[+1 Gold] for every adjacent [Luxury resource] tiles",
+			"[+1 Gold] for every adjacent [Server Farm] <in [your] tiles>",
+			"[+1 Happiness, +1 Faith] for every adjacent [Natural Wonder] <in [your] tiles>",
+			"[+1 Happiness] for every adjacent [Great Improvement] <in [your] tiles>",
+			"[+1 Happiness] for every adjacent [Luxury resource] <in [your] tiles>",
+			"[+1 Happiness] for every adjacent [{non-[Chitin]} {Enclosure}] <in [your] tiles>",
+			"[+1 Happiness] for every adjacent [{unimproved} {Coast}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [Strategic resource] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Aluminum} {Mine}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Basalt} {Quarry}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Chitin} {Enclosure}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Hexanite} {Mine}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Redstone} {Mine}] <in [your] tiles>",
+			"[+1 Production] for every adjacent [{Silica} {Quarry}] <in [your] tiles>",
+			"[+1 Science] for every adjacent [Research Base] <in [your] tiles>",
+			"[+3 Culture, +3 Faith] <within [3] tiles from a [City ruins]>",
+			"Cannot be built on [All] tiles <with [1] to [6] neighboring [Waystation] tiles>",
+			"Cannot be built on [All] tiles <within [2] tiles from a [Waystation] tiles>",
 			"Cannot be built on [Bonus resource] tiles",
 			"Cannot be built on [Luxury resource] tiles",
 			"Cannot be built on [Strategic resource] tiles",
-			/*
-			"[+1 Food] <with [1] to [6] neighboring [Plains] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Grassland] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Forest] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Hydroponics Field] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Agri Farm] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Terraboretum] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Coast] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Lakes] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Aquaculture] tiles>",
-			"[+1 Food, +1 Gold] <with [1] to [6] neighboring [Oasis] tiles>",
-			"[+1 Food, +1 Gold] <with [1] to [6] neighboring [Polar Oasis] tiles>",
-			"[+1 Food, +1 Production] <with [1] to [6] neighboring [Forestry Camp] tiles>",
-			"[+1 Food, +1 Production] <with [1] to [6] neighboring [Enclosure] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Hill] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Mountain] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Mine] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Quarry] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Offshore Platform] tiles>",
-			"[+1 Production, +1 Gold] <with [1] to [6] neighboring [Derrick] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Desert] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Snow] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Server Farm] tiles>",
-			"[+1 Science] <with [1] to [6] neighboring [Mycelium] tiles>",
-			"[+1 Science] <with [1] to [6] neighboring [Tundra] tiles>",
-			"[+1 Science] <with [1] to [6] neighboring [Jungle] tiles>",
-			"[+1 Science] <with [1] to [6] neighboring [Research Base] tiles>",
-			*/
-			//cut the entries above if too OP
-			
-			
-			"[+1 Food] <with [1] to [6] neighboring [Organic] tiles>",
-			
-			//"[+1 Production] <with [1] to [6] neighboring [Mineral] tiles>",
-			
-			"[+1 Production] <with [1] to [6] neighboring [Metallic] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Gemlike] tiles>",
-			
-			"Costs [2] [Faith] per turn <in tiles adjacent to [Waystation] tiles>",
-			
-			/*
-			"[+1 Food] <with [1] to [6] neighboring [Tubers] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Fungi Pods] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Exotic Fruits] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Rockbud] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Chitin] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Dairy Aphid] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Algae] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Seasilk] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Plankton] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Sea Slivers] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Spice] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Stimulants] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Hydromielin] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Ruby Cactus] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Snuffets] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Sindrian Lobster] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Flowers of Silence] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Vitamass] tiles>",
-			
-			"[+1 Production] <with [1] to [6] neighboring [Hexanite] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Aluminum] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Redstone] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Gold Ore] tiles>",
-			"[+1 Production] <with [1] to [6] neighboring [Titanium] tiles>",
-			
-			"[+1 Gold] <with [1] to [6] neighboring [Ruby Cactus] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Harmonix Crystals] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Jadonyx] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Kaibir Crystals] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Benthic Orbs] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Ulframite] tiles>",
-			"[+1 Gold] <with [1] to [6] neighboring [Gravitix] tiles>",
-			
-			//cut the entries above if still too OP
-			"[+1 Faith] <with [1] to [6] neighboring [Water resource] tiles>",
-			"[+1 Faith] <with [1] to [6] neighboring [Bonus resource] tiles>",
-			"[+1 Faith] <with [1] to [6] neighboring [Luxury resource] tiles>",
-			"[+1 Faith] <with [1] to [6] neighboring [Strategic resource] tiles>"
-			*/
-			
+			"Costs [2] [Faith] per turn",
+			"Pillaging this improvement yields approximately [+5 Gold]",
 			"Provides [1] [Digital Storage Space]",
 			"Provides [1] [Digital Storage Space] <after discovering [Info Networks]>",
-			"Pillaging this improvement yields approximately [+5 Gold]"
-			
+			"[-2 Happiness] for every adjacent [Waystation]"
 		],
 		//"shortcutKey": "F",
 		"civilopediaText": [
@@ -1067,7 +1012,7 @@
 			}
 		]
 	},
-	
+
 	{
 		"name": "Prefab Lair",
 		"uniqueTo": "Free Waverunners",
@@ -1099,7 +1044,7 @@
 			"Adjacent enemy units ending their turn take [5] damage <for [Water] units>", // see if this work or not
 			"[+1 Culture] <in [Land] tiles>",
 			"[+1 Gold, +1 Faith] <in [Water] tiles>",
-			"Costs [3] [Gold] per turn <in tiles adjacent to [Prefab Lair] tiles>"
+			"Costs [3] [Gold] per turn"
 		],
 		//"shortcutKey": "M",
 		"civilopediaText": [
